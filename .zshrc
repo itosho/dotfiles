@@ -43,6 +43,7 @@ setopt hist_ignore_dups
 setopt share_history
 
 ## zsh用プロンプト: https://github.com/sindresorhus/pure
+fpath+=("$(brew --prefix)/share/zsh/site-functions")
 autoload -U promptinit; promptinit
 prompt pure
 
